@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.containerPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vw;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8), src(ogle.com/url?sa=i&url=https%3A%2F%2Fwww.uidownload.com%2Fes%2Fvector-deurx&psig=AOvVaw0zY5XGX0ipf0agIyGTLvwk&ust=1673026245974000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCOCk-Mv6sPwCFQAAAAAdAAAAABAD));
+}
