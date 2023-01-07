@@ -7,6 +7,8 @@ import { LoginComponent } from './componentes/login/login.component';
 import { UsererrorComponent } from './componentes/usererror/usererror.component';
 import { PagcompraComponent } from './componentes/pagcompra/pagcompra.component';
 import { PagcarritoComponent } from './componentes/pagcarrito/pagcarrito.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 const appRoutes:Routes=
 [
@@ -26,7 +28,8 @@ const appRoutes:Routes=
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
