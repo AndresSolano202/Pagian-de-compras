@@ -17,3 +17,17 @@ app-pagcompra{
 i-material-icons{
     padding-right: 500px;
 }
+
+.btn {
+    border: none;
+    background-color: mediumpurple;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+
+
+

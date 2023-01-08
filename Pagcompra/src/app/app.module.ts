@@ -14,6 +14,12 @@ const appRoutes:Routes=
 [
   {
     path: 'login' , component: LoginComponent
+  },
+  {
+    path: 'principal' , component: PagcompraComponent
+  },
+  {
+    path: 'carro' , component: PagcarritoComponent
   }
 
 ]
