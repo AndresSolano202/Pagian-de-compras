@@ -61,6 +61,11 @@ export class PagcompraComponent implements OnInit {
   {
     this.router.navigate(['pagC'])
   }
+
+  log()
+  {
+    this.router.navigate([''])
+  }
   
 }
 
