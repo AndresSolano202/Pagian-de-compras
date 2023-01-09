@@ -20,7 +20,7 @@
 
         <div style="justify-content: space-between ;flex-direction: row; display: flex;">
             <i class="material-icons" style="color: white;">money</i> 
-            <p>precio</p>
+            <p>{{carro}}</p>
         </div>
        
         <div style="justify-content: space-between ;flex-direction: row; display: flex;">
@@ -50,7 +50,7 @@
         <div style="padding-left: 30%;">
             <br>
             <button ><i class="material-icons" style="color: black;">shopping_cart</i></button>
-            <p style="color: white; ">Your cart</p>   
+            <p style="color: white; padding-right:  ">Your cart</p>   
         </div>
         
        <br>
@@ -73,7 +73,7 @@
                 <br>
                 <p style="text-align: center; color: red;">$75.00</p>
                 <br>
-                <p style="text-align: center;"><button style="color: white; background-color: red;">AGREGAR</button></p>
+                <p style="text-align: center;"><button (click)="producto1()" style="color: white; background-color: red;">AGREGAR</button></p>
                 <br>
             </div>
 
@@ -86,7 +86,7 @@
                 <br>
                 <p style="text-align: center; color: red;">$980.00</p>
                 <br>
-                <p style="text-align: center;"><button style="color: white; background-color: red;">AGREGAR</button></p>
+                <p style="text-align: center;"><button (click)="producto2()" style="color: white; background-color: red;">AGREGAR</button></p>
             </div>
 
             <div style="border: black 2px solid; margin-left: 10%; height: 400Px; width: 250PX; "  >
@@ -98,7 +98,7 @@
                 <br>
                 <p style="text-align: center; color: red;">$980.00</p>
                 <br>
-                <p style="text-align: center;"><button style="color: white; background-color: red;">AGREGAR</button></p>
+                <p style="text-align: center;"><button (click)="producto3()" style="color: white; background-color: red;">AGREGAR</button></p>
             </div>
 
             <div style="border: black 2px solid; margin-left: 10%; height: 400Px; width: 250PX; "  >
@@ -111,7 +111,7 @@
                 <br>
                 <p style="text-align: center; color: red;">$1299.00</p>
                 <br>
-                <p style="text-align: center;"><button style="color: white; background-color: red;">AGREGAR</button></p>
+                <p style="text-align: center;"><button (click)="producto4()" style="color: white; background-color: red;">AGREGAR</button></p>
             </div>
         </div>
 
@@ -169,7 +169,7 @@
                 <br>
                 <p style="text-align: center; color: red;">$179.00</p>
                 <br>
-                <p style="text-align: center;"><button style="color: white; background-color: red;">AGREGAR</button></p>
+                <p style="text-align: center;"><button (click)="producto5()" style="color: white; background-color: red;">AGREGAR</button></p>
                 <br>
             </div>
 
@@ -182,7 +182,7 @@
                 <br>
                 <p style="text-align: center; color: red;">$1790.00</p>
                 <br>
-                <p style="text-align: center;"><button style="color: white; background-color: red;">AGREGAR</button></p>
+                <p style="text-align: center;"><button (click)="producto6()" style="color: white; background-color: red;">AGREGAR</button></p>
             </div>
 
             <div style="border: black 2px solid; margin-left: 10%; height: 400Px; width: 250PX; "  >
@@ -193,7 +193,7 @@
                 <br>
                 <p style="text-align: center; color: red;">$1818.60</p>
                 <br>
-                <p style="text-align: center;"><button style="color: white; background-color: red;">AGREGAR</button></p>
+                <p style="text-align: center;"><button (click)="producto7()" style="color: white; background-color: red;">AGREGAR</button></p>
             </div>
 
             <div style="border: black 2px solid; margin-left: 10%; height: 400Px; width: 250PX; "  >
@@ -206,7 +206,7 @@
                 <br>
                 <p style="text-align: center; color: red;">$1299.00</p>
                 <br>
-                <p style="text-align: center;"><button style="color: white; background-color: red;">AGREGAR</button></p>
+                <p style="text-align: center;"><button (click)="producto8()" style="color: white; background-color: red;">AGREGAR</button></p>
             </div>
 
         </div>
@@ -282,4 +282,3 @@
     <br>
     </div>
 </body>
-
