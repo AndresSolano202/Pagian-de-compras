@@ -23,10 +23,10 @@
           <h2>Electronic<br>Center</h2>
           <form>
             <div class="inputBox">
-              <input type="text" placeholder="Usuario">
+              <input type="text" placeholder="Usuario" [(ngModel)]="user">
             </div>
             <div class="inputBox">
-              <input type="password" placeholder="Contrasena">
+              <input type="password" placeholder="Contrasena" [(ngModel)]="contra">
             </div>
             <div class="inputBox">
               <input (click)="nave()" type="submit" value="Iniciar">

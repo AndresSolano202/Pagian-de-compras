@@ -10,13 +10,21 @@ export class LoginComponent implements OnInit {
 
   constructor(private router: Router){}
 
+  contra: any;
+  user: any;
+
   ngOnInit(): void {
-    
+
+    this.contra;
+    this.user;
+    localStorage.clear()
   }
 
   
   nave()
   {
+    localStorage.setItem('user', this.user);
+    localStorage.setItem('contra', this.contra);
     this.router.navigate(['pagP'])
   }
 
