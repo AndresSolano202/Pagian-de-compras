@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-pagcompra',
   templateUrl: './pagcompra.component.html',
@@ -7,68 +7,59 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagcompraComponent implements OnInit {
 
-  carro: number=0;
   
-  p1: number=75;
-  p2: number=980;
-  p3: number=980;
-  p4: number=1299;
-  p5: number=179;
-  p6: number=1790;
-  p7: number=1818;
-  p8: number=1299;
+  constructor(private router: Router){}
+  p1: number=0;
+  p2: number=0;
+  p3: number=0;
+  p4: number=0;
+  p5: number=0;
+  p6: number=0;
+  p7: number=0;
+  p8: number=0;
+  precio1:number=0;
+  precio2:number=0;
+  precio3:number=0;
+  precio4:number=0;
+  precio5:number=0;
+  precio6:number=0;
+  precio7:number=0;
+  precio8:number=0;
+  total:number=this.p1+this.p2+this.p3+this.p4+this.p5+this.p6+this.p7+this.p8;
+  suma:number=0;
+   
 
   ngOnInit():void{
     
+    this.p1;
+    this.p2;
+    this.p3;
+    this.p4;
+    this.p5;
+    this.p6;
+    this.p7;
+    this.p8;
+    this.precio1;
+    this.precio2;
+    this.precio3;
+    this.precio4;
+    this.precio5;
+    this.precio6;
+    this.precio7;
+    this.precio8;
+    this.total;
+
     //localStorage.clear()
-    localStorage.clear()
+  }
+
+  recuperar(){
     
+    this.suma=this.precio1+this.precio2+this.precio3+this.precio4+this.precio5+this.precio6+this.precio7+this.precio8;
   }
 
-  producto1()
+  nav()
   {
-    localStorage.setItem('p1', this.p1.toString())
-    this.carro=+Number(this.p1)
-  }
-
-  producto2()
-  {
-    localStorage.setItem('p2', this.p2.toString())
-  }
-
-  producto3()
-  {
-    localStorage.setItem('p3', this.p3.toString())
-  }
-
-  producto4()
-  {
-    localStorage.setItem('p4', this.p4.toString())
-  }
-
-  producto5()
-  {
-    localStorage.setItem('p5', this.p5.toString())
-  }
-
-  producto6()
-  {
-    localStorage.setItem('p6', this.p6.toString())
-  }
-
-  producto7()
-  {
-    localStorage.setItem('p7', this.p7.toString())
-  }
-
-  producto8()
-  {
-    localStorage.setItem('p8', this.p8.toString())
-  }
-  
-  carrito()
-  {
-    this.carro=Number(this.p1)+Number(this.p2)+Number(this.p3)+Number(this.p4)+Number(this.p5)+Number(this.p6)+Number(this.p7)+Number(this.p8)
+    this.router.navigate(['pagC'])
   }
   
 }
